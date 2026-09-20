@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: jaffle_shop    # <--- Verifica che ci sia questo trattino seguito da NAME
+    database: raw
+    schema: jaffle_shop
+    tables:
+      - name: customers
+      - name: orders
