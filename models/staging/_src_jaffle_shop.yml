@@ -2,12 +2,15 @@ version: 2
 
 sources:
   - name: jaffle_shop    # <--- Verifica che ci sia questo trattino seguito da NAME
+    description: A clone of a Postgres database
     database: raw
     schema: jaffle_shop
     tables:
       - name: customers
+        description: Raw customers data
         columns: 
          - name: id
+           description: primary key
            data_tests:
            - unique
            - not_null
