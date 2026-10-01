@@ -11,7 +11,8 @@ renamed as (
         orderid as order_id,
         paymentmethod as  payment_method,
         status,
-       AMOUNT/100 as amount,
+        ----amount is stored in cents, so we need to convert it to dollars
+        {{ cent_to_dollar('amount', 4) }} as amount,
         CREATED as created_at,
         _batched_at
 

@@ -1,0 +1,13 @@
+macros:
+ - name: cent_to_dollar
+   description: "Converts a column from cents to dollars"
+   arguments:
+     - name: column_name
+       description: "The name of the column to convert"
+       type: string
+     - name: decimals
+       description: "The number of decimal places to round to (default is 4)"
+       type: integer
+   returns:
+     description: "A SQL expression that converts the specified column from cents to dollars and rounds it to the specified number of decimal places."
+     type: string
