@@ -11,3 +11,19 @@ macros:
    returns:
      description: "A SQL expression that converts the specified column from cents to dollars and rounds it to the specified number of decimal places."
      type: string
+ - name: grant_select 
+   description: "Generates a SQL statement to grant SELECT privileges on a specified table to a specified role."
+   arguments:
+     - name: schema_name
+       description: "The name of the schema containing the table"
+       type: string
+     - name: role_name
+       description: "The name of the role to grant SELECT privileges to"
+       type: string
+     - name: database_name
+       description: "The name of the database containing the schema and table"
+       type: string
+   returns:
+     description: "A SQL statement that grants SELECT privileges on the specified table to the specified role."
+     type: string   
+     
