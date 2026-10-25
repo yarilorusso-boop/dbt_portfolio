@@ -1,1 +1,0 @@
-{{target.name}}_{{target.schema}}_{{target.table}}_{{target.type}}
